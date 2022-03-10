@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7086CD23-725A-4058-BE34-C6180B3694DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TFC_ENNOCK</RootNamespace>
+    <AssemblyName>TFC_ENNOCK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\azord_cantine\AZORD_CANTINE\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\TFC_DGM\TFC_DGM\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABOUTBOXERS\AUDITOIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\AUDITOIRE.Designer.cs">
+      <DependentUpon>AUDITOIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\FRAIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\FRAIS.Designer.cs">
+      <DependentUpon>FRAIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\OPTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\OPTION.Designer.cs">
+      <DependentUpon>OPTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\PROMOTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\PROMOTION.Designer.cs">
+      <DependentUpon>PROMOTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\RECOUVREMENT_PARAMETRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUTBOXERS\RECOUVREMENT_PARAMETRE.Designer.cs">
+      <DependentUpon>RECOUVREMENT_PARAMETRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MYCONNECTION.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RAPPORT\CARTE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAPPORT\CARTE.Designer.cs">
+      <DependentUpon>CARTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAPPORT\LISTE_ETUDIANT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAPPORT\LISTE_ETUDIANT.Designer.cs">
+      <DependentUpon>LISTE_ETUDIANT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAPPORT\RAPPORT_PAIEMENT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAPPORT\RAPPORT_PAIEMENT.Designer.cs">
+      <DependentUpon>RAPPORT_PAIEMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAPPORT\RECU.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RAPPORT\RECU.Designer.cs">
+      <DependentUpon>RECU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROL\DASHBOARD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROL\DASHBOARD.Designer.cs">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROL\ENREGISTREMENT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROL\ENREGISTREMENT.Designer.cs">
+      <DependentUpon>ENREGISTREMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROL\PAIEMENT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROL\PAIEMENT.Designer.cs">
+      <DependentUpon>PAIEMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USERCONTROL\RECOUVREMENT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="USERCONTROL\RECOUVREMENT.Designer.cs">
+      <DependentUpon>RECOUVREMENT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABOUTBOXERS\AUDITOIRE.resx">
+      <DependentUpon>AUDITOIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABOUTBOXERS\FRAIS.resx">
+      <DependentUpon>FRAIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABOUTBOXERS\OPTION.resx">
+      <DependentUpon>OPTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABOUTBOXERS\PROMOTION.resx">
+      <DependentUpon>PROMOTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABOUTBOXERS\RECOUVREMENT_PARAMETRE.resx">
+      <DependentUpon>RECOUVREMENT_PARAMETRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RAPPORT\CARTE.resx">
+      <DependentUpon>CARTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAPPORT\LISTE_ETUDIANT.resx">
+      <DependentUpon>LISTE_ETUDIANT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAPPORT\RAPPORT_PAIEMENT.resx">
+      <DependentUpon>RAPPORT_PAIEMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAPPORT\RECU.resx">
+      <DependentUpon>RECU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROL\DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROL\ENREGISTREMENT.resx">
+      <DependentUpon>ENREGISTREMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROL\PAIEMENT.resx">
+      <DependentUpon>PAIEMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERCONTROL\RECOUVREMENT.resx">
+      <DependentUpon>RECOUVREMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3229.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\University_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\University_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_User_Group_Man_Man_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group_Message_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Bag_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3182 - Copie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_as_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUTINDIAPALA MWILILIKWA EXAUCE.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-697462144-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uago1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\683269-alvaro-morte-la-casa-de-papel-devoile-diapo-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_personal_finance_tqcd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Team_page_re_cffb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_profile_pic_ic5t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_studying_s3l7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_mathematics_4otb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_teaching_f1cm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
